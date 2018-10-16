@@ -1,4 +1,6 @@
 
-public class MyArrayDataException {
-
+public class MyArrayDataException extends Exception {
+public MyArrayDataException(Throwable e) {
+	initCause(e);
+}
 }
